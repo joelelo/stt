@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function Perpus() {
-    return <div>Library</div>;
-}
+const Repository = () => {
+    return <div>Repository</div>;
+};
+
+export default Repository;

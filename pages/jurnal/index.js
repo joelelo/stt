@@ -1,5 +1,7 @@
 import React from 'react';
 
-export default function Jurnal() {
-    return <div>Library</div>;
-}
+const Journal = () => {
+    return <div>Journal</div>;
+};
+
+export default Journal;
