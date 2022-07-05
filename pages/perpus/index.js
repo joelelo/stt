@@ -1,7 +1,13 @@
 import React from 'react';
+import Navbar from '../../components/navbar';
 
 const Repository = () => {
-    return <div>Repository</div>;
+    return (
+        <div>
+            <Navbar />
+            Repository
+        </div>
+    );
 };
 
 export default Repository;
