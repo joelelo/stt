@@ -1,16 +1,16 @@
 import React from 'react';
-import Navbar from '../../components/navbar';
 import Image from 'next/image';
 import styles from './library.module.scss';
 import { Input } from 'antd';
+
 const { Search } = Input;
+
 const Repository = () => {
     const handleSearch = (value) => {
         console.log(value);
     };
     return (
         <div>
-            <Navbar />
             <div className={styles.imagecontainer}>
                 <div className={styles.tbox}>
                     <h1 className={styles.inimage}>PERPUSTAKAAN</h1>
