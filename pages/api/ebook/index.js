@@ -12,11 +12,6 @@ export default function handler(req, res) {
     switch (method) {
         case 'GET':
             //read file use '/api/ebook' at src to use
-            const range = req.headers.range;
-            console.log('Range: ' + range);
-            if (!range) {
-                return res.status(400).send('range must be provided');
-            }
 
             const filestream = fs.createReadStream('./ebooks/Building.pdf');
             const fileSize = fs.statSync('./ebooks/Building.pdf').size;
