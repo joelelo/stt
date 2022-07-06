@@ -17,6 +17,7 @@ export default function handler(req, res) {
             const fileSize = fs.statSync('./ebooks/Building.pdf').size;
 
             const headers = {
+                'Content-Disposition': 'Building',
                 'Content-Length': fileSize,
                 'Content-Type': 'application/pdf',
             };
